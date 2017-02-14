@@ -3,9 +3,9 @@ Rails.application.routes.draw do
 end
 Rails.application.routes.draw do
 
-  get '/', to: 'tasks#index'
+  get '/', to: 'tasks#index', as: :index
 
- get '/tasks/:id', to: 'tasks#show'
+ get '/tasks/:id', to: 'tasks#show', as: :show
 
  get '/tasks/new', to: 'tasks#new'
 
