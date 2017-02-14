@@ -1,0 +1,11 @@
+<h1>Good morning !</h1>
+<h2>Here is the list of tasks to do: </h2>
+
+<% @tasks.each do |task| %>
+  <p><%= task.title %></p>
+  <ul>
+  <li><p>Description:<%= task.description %></p></li>
+  <li><p>Priority: <%= task.priority %></p></li>
+  </ul>
+<% end %>
+
