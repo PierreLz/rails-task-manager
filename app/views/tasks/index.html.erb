@@ -2,7 +2,9 @@
 <h2>Here is the list of tasks to do: </h2>
 
 <% @tasks.each do |task| %>
-  <p><%= link_to task.title, show_path(task.id) %></p>
+  <p><%= link_to task.title, task_path(task.id) %></p>
 
 <% end %>
+
+  <p><%= link_to "New task", tasknew_path %></p>
 
